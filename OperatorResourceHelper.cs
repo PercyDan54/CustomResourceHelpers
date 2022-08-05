@@ -39,12 +39,12 @@ namespace ArknightsResources.CustomResourceHelpers
         /// 获取全部干员
         /// </summary>
         /// <returns>一个<see cref="Operator"/>数组</returns>
-        public abstract Operator[] GetAllOperators(CultureInfo cultureInfo);
+        public abstract OperatorsList GetAllOperators(CultureInfo cultureInfo);
 
         /// <summary>
         /// 异步获取全部干员
         /// </summary>
         /// <returns>一个<see cref="Operator"/>数组</returns>
-        public abstract Task<Operator[]> GetAllOperatorsAsync(CultureInfo cultureInfo);
+        public abstract Task<OperatorsList> GetAllOperatorsAsync(CultureInfo cultureInfo);
     }
 }

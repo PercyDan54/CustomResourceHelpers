@@ -1,8 +1,5 @@
 ﻿using ArknightsResources.Operators.Models;
-using System;
-using System.Collections.Generic;
 using System.Globalization;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace ArknightsResources.CustomResourceHelpers
@@ -12,6 +9,27 @@ namespace ArknightsResources.CustomResourceHelpers
     /// </summary>
     public abstract class OperatorResourceHelper
     {
+        /// <summary>
+        /// 简体中文的语言文化信息
+        /// </summary>
+        public static readonly CultureInfo ChineseSimplifiedCultureInfo = CultureInfo.ReadOnly(new CultureInfo("zh-CN", false));
+        /// <summary>
+        /// 繁体中文的语言文化信息
+        /// </summary>
+        public static readonly CultureInfo ChineseTraditionalCultureInfo = CultureInfo.ReadOnly(new CultureInfo("zh-TW", false));
+        /// <summary>
+        /// 英语的语言文化信息
+        /// </summary>
+        public static readonly CultureInfo EnglishCultureInfo = CultureInfo.ReadOnly(new CultureInfo("en-US", false));
+        /// <summary>
+        /// 日语的语言文化信息
+        /// </summary>
+        public static readonly CultureInfo JapaneseCultureInfo = CultureInfo.ReadOnly(new CultureInfo("ja-JP", false));
+        /// <summary>
+        /// 韩语的语言文化信息
+        /// </summary>
+        public static readonly CultureInfo KoreanCultureInfo = CultureInfo.ReadOnly(new CultureInfo("ko-KR", false));
+
         /// <summary>
         /// 通过干员的立绘信息获取其图片
         /// </summary>
@@ -30,10 +48,10 @@ namespace ArknightsResources.CustomResourceHelpers
         /// <summary>
         /// 通过干员图像代号获取其<see cref="Operator"/>对象
         /// </summary>
-        /// <param name="operatorCodename">干员图像代号</param>
+        /// <param name="operatorImageCodename">干员图像代号</param>
         /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
         /// <returns>一个<see cref="Operator"/>对象</returns>
-        public abstract Operator GetOperatorWithCodename(string operatorCodename, CultureInfo cultureInfo);
+        public abstract Operator GetOperatorWithImageCodename(string operatorImageCodename, CultureInfo cultureInfo);
 
         /// <summary>
         /// 获取全部干员

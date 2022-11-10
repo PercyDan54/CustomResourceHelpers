@@ -15,6 +15,7 @@
 	<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 	<DebugType>portable</DebugType>
     <Description>Provides base resource helper class for custom resource access.</Description>
+	<RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
   </PropertyGroup>
 
   <ItemGroup>

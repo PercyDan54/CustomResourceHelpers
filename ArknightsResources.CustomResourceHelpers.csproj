@@ -14,8 +14,6 @@
     <PackageIcon>icon.png</PackageIcon>
     <DebugType>portable</DebugType>
     <Description>Provides base resource helper class for custom resource access.</Description>
-    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
-    <DisableImplicitNuGetFallbackFolder>true</DisableImplicitNuGetFallbackFolder>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">

@@ -29,6 +29,10 @@ namespace ArknightsResources.CustomResourceHelpers
         /// 韩语的语言文化信息
         /// </summary>
         public static readonly CultureInfo KoreanCultureInfo = CultureInfo.ReadOnly(new CultureInfo("ko-KR", false));
+        /// <summary>
+        /// 意大利语的语言文化信息
+        /// </summary>
+        public static readonly CultureInfo ItalianCultureInfo = CultureInfo.ReadOnly(new CultureInfo("it-IT", false));
 
         /// <summary>
         /// 通过干员的立绘信息获取其图片

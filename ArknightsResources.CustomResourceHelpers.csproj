@@ -14,6 +14,7 @@
     <PackageIcon>icon.png</PackageIcon>
     <DebugType>portable</DebugType>
     <Description>Provides base resource helper class for custom resource access.</Description>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">

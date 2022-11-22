@@ -136,6 +136,13 @@ namespace ArknightsResources.CustomResourceHelpers
         public static abstract byte[] GetOperatorImage(OperatorIllustrationInfo illustrationInfo);
 
         /// <summary>
+        /// 通过干员的立绘信息异步获取其图片
+        /// </summary>
+        /// <param name="illustrationInfo">干员的立绘信息</param>
+        /// <returns>一个byte数组,其中包含了干员的图片信息</returns>
+        public static abstract Task<byte[]> GetOperatorImageAsync(OperatorIllustrationInfo illustrationInfo);
+
+        /// <summary>
         /// 通过干员名称获取其<see cref="Operator"/>对象
         /// </summary>
         /// <param name="operatorName">干员名称</param>
@@ -144,12 +151,28 @@ namespace ArknightsResources.CustomResourceHelpers
         public static abstract Operator GetOperator(string operatorName, CultureInfo cultureInfo);
 
         /// <summary>
+        /// 通过干员名称异步获取其<see cref="Operator"/>对象
+        /// </summary>
+        /// <param name="operatorName">干员名称</param>
+        /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
+        /// <returns>一个<see cref="Operator"/>对象</returns>
+        public static abstract Task<Operator> GetOperatorAsync(string operatorName, CultureInfo cultureInfo);
+
+        /// <summary>
         /// 通过干员图像代号获取其<see cref="Operator"/>对象
         /// </summary>
         /// <param name="operatorImageCodename">干员图像代号</param>
         /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
         /// <returns>一个<see cref="Operator"/>对象</returns>
         public static abstract Operator GetOperatorWithImageCodename(string operatorImageCodename, CultureInfo cultureInfo);
+
+        /// <summary>
+        /// 通过干员图像代号异步获取其<see cref="Operator"/>对象
+        /// </summary>
+        /// <param name="operatorImageCodename">干员图像代号</param>
+        /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
+        /// <returns>一个<see cref="Operator"/>对象</returns>
+        public static abstract Task<Operator> GetOperatorWithImageCodenameAsync(string operatorImageCodename, CultureInfo cultureInfo);
 
         /// <summary>
         /// 获取全部干员

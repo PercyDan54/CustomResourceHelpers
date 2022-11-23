@@ -16,9 +16,9 @@
     <EmbedUntrackedSources>true</EmbedUntrackedSources>
     <IsTrimmable>true</IsTrimmable>
     <DebugType>embedded</DebugType>
-    <Version>0.1.0.0</Version>
-		<AssemblyVersion>0.1.0.0</AssemblyVersion>
-		<FileVersion>0.1.0.0</FileVersion>
+    <Version>0.1.0.0-alpha</Version>
+    <AssemblyVersion>0.1.0.0</AssemblyVersion>
+    <FileVersion>0.1.0.0</FileVersion>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(GITHUB_ACTIONS)' == 'true'">
@@ -38,9 +38,4 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
   </ItemGroup>
-
-  <ItemGroup>
-    <ProjectReference Include="..\ArknightsResources.Operators.Models\ArknightsResources.Operators.Models.csproj" />
-  </ItemGroup>
-
 </Project>

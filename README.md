@@ -1,1 +1,1 @@
-# ArknightsResources.CustomResourceHelpers
+# ArknightsResources - Custom Resource Helpers

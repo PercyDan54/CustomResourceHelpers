@@ -38,6 +38,13 @@ namespace ArknightsResources.CustomResourceHelpers
         /// <param name="cultureInfo"></param>
         /// <returns>原始剧情文本</returns>
         public abstract string GetStoryRawText(string codename, CultureInfo cultureInfo);
+
+        /// <summary>
+        /// 通过文件代号获取一个剧情视频
+        /// </summary>
+        /// <param name="codename">视频代号</param>
+        /// <returns>包含有视频数据的byte数组</returns>
+        public abstract byte[] GetVideo(string codename);
     }
 
 
@@ -76,6 +83,13 @@ namespace ArknightsResources.CustomResourceHelpers
         /// <param name="cultureInfo"></param>
         /// <returns>原始剧情文本</returns>
         public static abstract string GetStoryRawText(string codename, CultureInfo cultureInfo);
+
+        /// <summary>
+        /// 通过文件代号获取一个剧情视频
+        /// </summary>
+        /// <param name="codename">视频代号</param>
+        /// <returns>包含有视频数据的byte数组</returns>
+        public static abstract byte[] GetVideo(string codename);
     }
 
 #endif

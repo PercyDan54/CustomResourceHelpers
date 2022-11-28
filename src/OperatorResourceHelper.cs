@@ -40,22 +40,22 @@ namespace ArknightsResources.CustomResourceHelpers
         /// <summary>
         /// 通过干员的立绘信息获取其图片
         /// </summary>
-        /// <param name="illustrationInfo">干员的立绘信息</param>
+        /// <param name="illustInfo">干员的立绘信息</param>
         /// <returns>一个byte数组,其中包含了干员的图片信息</returns>
-        public abstract byte[] GetOperatorImage(OperatorIllustrationInfo illustrationInfo);
+        public abstract byte[] GetOperatorImage(OperatorIllustrationInfo illustInfo);
 
         /// <summary>
         /// 通过干员的立绘信息异步获取其图片
         /// </summary>
-        /// <param name="illustrationInfo">干员的立绘信息</param>
+        /// <param name="illustInfo">干员的立绘信息</param>
         /// <returns>一个byte数组,其中包含了干员的图片信息</returns>
-        public abstract Task<byte[]> GetOperatorImageAsync(OperatorIllustrationInfo illustrationInfo);
+        public abstract Task<byte[]> GetOperatorImageAsync(OperatorIllustrationInfo illustInfo);
 
         /// <summary>
         /// 通过干员名称获取其<see cref="Operator"/>对象
         /// </summary>
         /// <param name="operatorName">干员名称</param>
-        /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
+        /// <param name="cultureInfo"><see cref="Operator"/>对象所使用的语言</param>
         /// <returns>一个<see cref="Operator"/>对象</returns>
         public abstract Operator GetOperator(string operatorName, CultureInfo cultureInfo);
 
@@ -63,36 +63,38 @@ namespace ArknightsResources.CustomResourceHelpers
         /// 通过干员名称异步获取其<see cref="Operator"/>对象
         /// </summary>
         /// <param name="operatorName">干员名称</param>
-        /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
+        /// <param name="cultureInfo"><see cref="Operator"/>对象所使用的语言</param>
         /// <returns>一个<see cref="Operator"/>对象</returns>
         public abstract Task<Operator> GetOperatorAsync(string operatorName, CultureInfo cultureInfo);
 
         /// <summary>
         /// 通过干员图像代号获取其<see cref="Operator"/>对象
         /// </summary>
-        /// <param name="operatorImageCodename">干员图像代号</param>
-        /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
+        /// <param name="imageCodename">干员图像代号</param>
+        /// <param name="cultureInfo"><see cref="Operator"/>对象所使用的语言</param>
         /// <returns>一个<see cref="Operator"/>对象</returns>
-        public abstract Operator GetOperatorWithImageCodename(string operatorImageCodename, CultureInfo cultureInfo);
+        public abstract Operator GetOperatorWithImageCodename(string imageCodename, CultureInfo cultureInfo);
 
         /// <summary>
         /// 通过干员图像代号异步获取其<see cref="Operator"/>对象
         /// </summary>
-        /// <param name="operatorImageCodename">干员图像代号</param>
-        /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
+        /// <param name="imageCodename">干员图像代号</param>
+        /// <param name="cultureInfo"><see cref="Operator"/>对象所使用的语言</param>
         /// <returns>一个<see cref="Operator"/>对象</returns>
-        public abstract Task<Operator> GetOperatorWithImageCodenameAsync(string operatorImageCodename, CultureInfo cultureInfo);
+        public abstract Task<Operator> GetOperatorWithImageCodenameAsync(string imageCodename, CultureInfo cultureInfo);
 
         /// <summary>
         /// 获取全部干员
         /// </summary>
-        /// <returns>一个<see cref="Operator"/>数组</returns>
+        /// <param name="cultureInfo"><see cref="OperatorsList"/>中对象所使用的语言</param>
+        /// <returns>一个<see cref="OperatorsList"/>对象</returns>
         public abstract OperatorsList GetAllOperators(CultureInfo cultureInfo);
 
         /// <summary>
         /// 异步获取全部干员
         /// </summary>
-        /// <returns>一个<see cref="Operator"/>数组</returns>
+        /// <param name="cultureInfo"><see cref="OperatorsList"/>中对象所使用的语言</param>
+        /// <returns>一个<see cref="OperatorsList"/>对象</returns>
         public abstract Task<OperatorsList> GetAllOperatorsAsync(CultureInfo cultureInfo);
     }
 
@@ -131,22 +133,22 @@ namespace ArknightsResources.CustomResourceHelpers
         /// <summary>
         /// 通过干员的立绘信息获取其图片
         /// </summary>
-        /// <param name="illustrationInfo">干员的立绘信息</param>
+        /// <param name="illustInfo">干员的立绘信息</param>
         /// <returns>一个byte数组,其中包含了干员的图片信息</returns>
-        public static abstract byte[] GetOperatorImage(OperatorIllustrationInfo illustrationInfo);
+        public static abstract byte[] GetOperatorImage(OperatorIllustrationInfo illustInfo);
 
         /// <summary>
         /// 通过干员的立绘信息异步获取其图片
         /// </summary>
-        /// <param name="illustrationInfo">干员的立绘信息</param>
+        /// <param name="illustInfo">干员的立绘信息</param>
         /// <returns>一个byte数组,其中包含了干员的图片信息</returns>
-        public static abstract Task<byte[]> GetOperatorImageAsync(OperatorIllustrationInfo illustrationInfo);
+        public static abstract Task<byte[]> GetOperatorImageAsync(OperatorIllustrationInfo illustInfo);
 
         /// <summary>
         /// 通过干员名称获取其<see cref="Operator"/>对象
         /// </summary>
         /// <param name="operatorName">干员名称</param>
-        /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
+        /// <param name="cultureInfo"><see cref="Operator"/>对象所使用的语言</param>
         /// <returns>一个<see cref="Operator"/>对象</returns>
         public static abstract Operator GetOperator(string operatorName, CultureInfo cultureInfo);
 
@@ -154,36 +156,38 @@ namespace ArknightsResources.CustomResourceHelpers
         /// 通过干员名称异步获取其<see cref="Operator"/>对象
         /// </summary>
         /// <param name="operatorName">干员名称</param>
-        /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
+        /// <param name="cultureInfo"><see cref="Operator"/>对象所使用的语言</param>
         /// <returns>一个<see cref="Operator"/>对象</returns>
         public static abstract Task<Operator> GetOperatorAsync(string operatorName, CultureInfo cultureInfo);
 
         /// <summary>
         /// 通过干员图像代号获取其<see cref="Operator"/>对象
         /// </summary>
-        /// <param name="operatorImageCodename">干员图像代号</param>
-        /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
+        /// <param name="imageCodename">干员图像代号</param>
+        /// <param name="cultureInfo"><see cref="Operator"/>对象所使用的语言</param>
         /// <returns>一个<see cref="Operator"/>对象</returns>
-        public static abstract Operator GetOperatorWithImageCodename(string operatorImageCodename, CultureInfo cultureInfo);
+        public static abstract Operator GetOperatorWithImageCodename(string imageCodename, CultureInfo cultureInfo);
 
         /// <summary>
         /// 通过干员图像代号异步获取其<see cref="Operator"/>对象
         /// </summary>
-        /// <param name="operatorImageCodename">干员图像代号</param>
-        /// <param name="cultureInfo"><see cref="Operator"/>对象的语言文化</param>
+        /// <param name="imageCodename">干员图像代号</param>
+        /// <param name="cultureInfo"><see cref="Operator"/>对象所使用的语言</param>
         /// <returns>一个<see cref="Operator"/>对象</returns>
-        public static abstract Task<Operator> GetOperatorWithImageCodenameAsync(string operatorImageCodename, CultureInfo cultureInfo);
+        public static abstract Task<Operator> GetOperatorWithImageCodenameAsync(string imageCodename, CultureInfo cultureInfo);
 
         /// <summary>
         /// 获取全部干员
         /// </summary>
-        /// <returns>一个<see cref="Operator"/>数组</returns>
+        /// <param name="cultureInfo"><see cref="OperatorsList"/>中对象所使用的语言</param>
+        /// <returns>一个<see cref="OperatorsList"/>对象</returns>
         public static abstract OperatorsList GetAllOperators(CultureInfo cultureInfo);
 
         /// <summary>
         /// 异步获取全部干员
         /// </summary>
-        /// <returns>一个<see cref="Operator"/>数组</returns>
+        /// <param name="cultureInfo"><see cref="OperatorsList"/>中对象所使用的语言</param>
+        /// <returns>一个<see cref="OperatorsList"/>对象</returns>
         public static abstract Task<OperatorsList> GetAllOperatorsAsync(CultureInfo cultureInfo);
     }
 

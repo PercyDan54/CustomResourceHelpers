@@ -11,7 +11,7 @@ registries:
     username: ArknightsResources
     password: ${{ secrets.GITHUB_TOKEN }}
 updates:
-  - package-ecosystem: "nuget" # See documentation for possible values
+  - package-ecosystem: "gitHubPackage" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"

@@ -5,13 +5,13 @@
 
 version: 2
 registries:
-  gitHubPackage: # Define access for a private registry
+  nuget: # Define access for a private registry
     type: nuget-feed
     url: https://nuget.pkg.github.com/ArknightsResources/index.json
     username: ArknightsResources
     password: ${{ secrets.GITHUB_TOKEN }}
 updates:
-  - package-ecosystem: "gitHubPackage" # See documentation for possible values
+  - package-ecosystem: "nuget" # See documentation for possible values
     directory: "/" # Location of package manifests
     schedule:
       interval: "daily"

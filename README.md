@@ -2,7 +2,7 @@
 本库提供了对与明日方舟相关资源的自定义读取方式。
 
 ## 目标框架
-.NET Standard 2.0, .NET 6 与 .NET 7。
+.NET Standard 2.0。
 
 ## 构建
 .NET CLI 与 Visual Studio 2022皆可。

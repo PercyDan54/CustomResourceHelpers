@@ -5,6 +5,9 @@ on:
   push:
     branches: [ main ]
 
+env:
+  DOTNET_VERSION: '6.x' # The .NET SDK version to use
+
 jobs:
   build:
 

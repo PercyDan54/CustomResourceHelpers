@@ -4,7 +4,7 @@ using ArknightsResources.Operators.Models;
 namespace ArknightsResources.CustomResourceHelpers
 {
     /// <summary>
-    /// 定义一套用以读取与干员立绘相关资源的方法
+    /// 定义一套读取干员立绘相关资源的方法
     /// </summary>
     public interface IOperatorIllustrationGetter
     {

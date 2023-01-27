@@ -1,11 +1,12 @@
-﻿using System.Globalization;
+﻿using System.Collections.Immutable;
+using System.Globalization;
 using System.Threading.Tasks;
 using ArknightsResources.Operators.Models;
 
 namespace ArknightsResources.CustomResourceHelpers
 {
     /// <summary>
-    /// 定义一套用以获取与干员相关信息的方法
+    /// 定义获取干员相关信息的方法
     /// </summary>
     public interface IOperatorInfoGetter
     {
@@ -44,15 +45,15 @@ namespace ArknightsResources.CustomResourceHelpers
         /// <summary>
         /// 获取当前可用的全部干员
         /// </summary>
-        /// <param name="cultureInfo"><see cref="OperatorsList"/>中对象所使用的语言</param>
-        /// <returns>一个<see cref="OperatorsList"/>对象</returns>
-        OperatorsList GetAllOperators(CultureInfo cultureInfo);
+        /// <param name="cultureInfo"><see cref="Operator"/>对象所使用的语言</param>
+        /// <returns>一个Key为干员代号，Value为<see cref="Operator"/>对象的字典</returns>
+        ImmutableDictionary<string, Operator> GetAllOperators(CultureInfo cultureInfo);
 
         /// <summary>
         /// 异步获取当前可用的全部干员
         /// </summary>
-        /// <param name="cultureInfo"><see cref="OperatorsList"/>中对象所使用的语言</param>
-        /// <returns>一个<see cref="OperatorsList"/>对象</returns>
-        Task<OperatorsList> GetAllOperatorsAsync(CultureInfo cultureInfo);
+        /// <param name="cultureInfo"><see cref="Operator"/>对象所使用的语言</param>
+        /// <returns>一个Key为干员代号，Value为<see cref="Operator"/>对象的字典</returns>
+        Task<ImmutableDictionary<string, Operator>> GetAllOperatorsAsync(CultureInfo cultureInfo);
     }
 }

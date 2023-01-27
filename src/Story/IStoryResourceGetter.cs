@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 namespace ArknightsResources.CustomResourceHelpers
 {
     /// <summary>
-    /// 定义一套用以读取与剧情相关资源的方法
+    /// 定义一套读取剧情相关资源的方法
     /// </summary>
     public interface IStoryResourceGetter
     {

@@ -9,14 +9,14 @@ namespace ArknightsResources.CustomResourceHelpers
     public interface IOperatorVoiceGetter
     {
         /// <summary>
-        /// 通过干员的配音信息获取其语音
+        /// 通过干员的语音信息获取其语音
         /// </summary>
         /// <param name="voiceInfo"></param>
         /// <returns></returns>
         byte[] GetOperatorVoice(OperatorVoiceItem voiceInfo);
 
         /// <summary>
-        /// 通过干员的配音信息异步获取其语音
+        /// 通过干员的语音信息异步获取其语音
         /// </summary>
         /// <param name="voiceInfo"></param>
         /// <returns></returns>

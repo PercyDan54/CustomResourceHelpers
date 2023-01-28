@@ -13,13 +13,13 @@ namespace ArknightsResources.CustomResourceHelpers
         /// </summary>
         /// <param name="voiceInfo"></param>
         /// <returns></returns>
-        byte[] GetOperatorVoice(OperatorVoiceItem voiceInfo);
+        byte[] GetOperatorVoice(OperatorVoiceLine voiceInfo);
 
         /// <summary>
         /// 通过干员的语音信息异步获取其语音
         /// </summary>
         /// <param name="voiceInfo"></param>
         /// <returns></returns>
-        Task<byte[]> GetOperatorVoiceAsync(OperatorVoiceItem voiceInfo);
+        Task<byte[]> GetOperatorVoiceAsync(OperatorVoiceLine voiceInfo);
     }
 }
